@@ -4,7 +4,7 @@
 }
 
 header {
-  position: fixed;
+  position: fixed; /* DEFAULT: Fixed for desktop/tablet */
   top: 0;
   left: 0;
   width: 100%;
@@ -686,8 +686,30 @@ body {
 
 /* Responsive for tablets and phones */
 @media (max-width: 1024px) {
+  
+  /* --- NEW FIX: Remove floating effect on mobile screens --- */
+  header {
+    position: static; /* Header scrolls with the page */
+    top: auto; 
+    left: auto;
+    background-color: transparent; /* Ensure no background issues */
+  }
+
+  .header-list {
+    margin: 0; /* Remove side margins */
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .div-list {
+    display: none; /* HIDE THE FLOATING MENU CONTAINER COMPLETELY */
+  }
+  /* ----------------------------------------------------- */
+
   .home, .about, .project, .services, .contact {
     margin: 120px 50px; /* Adjusted top margin for fixed header clearance */
+    /* Since header is now STATIC, we need to adjust margin on home/sections */
+    margin-top: 50px; /* Reduced top margin since the header is no longer fixed */
   }
 
   .home-container, .about-container {
@@ -699,41 +721,6 @@ body {
     width: 100%;
     height: auto;
   }
-
-  /* FIX 1: Remove side margins on header list wrapper */
-  .header-list {
-    margin: 15px 0; /* Override desktop margin to give space */
-    overflow-x: hidden;
-  }
-  
-  /* FIX 2: Ensure wrapper uses full width and centers the content */
-  .div-list {
-    width: 100%;
-    /* No need for overflow-x: auto here as the content should fit now */
-    overflow-x: hidden;
-  }
-
-  /* FIX 3: Shrink and center the menu to fit on one line (primary fix) */
-  .ul-list {
-    /* We allow wrapping again just in case, but the shrinkage should prevent it */
-    flex-wrap: wrap; 
-    gap: 0.5rem; /* Reduced gap */
-    padding: 5px 10px; /* Reduced padding on the container */
-    overflow-x: hidden;
-  }
-  /* Webkit-specific (Chrome, Safari) scrollbar hide */
-  .ul-list::-webkit-scrollbar {
-    display: none;
-  }
-
-  /* FIX 4: Shrink the individual list items */
-  .ul-list li {
-    gap: 3px; /* Smaller gap between icon and text */
-  }
-  .ul-list li.active {
-    padding: 5px 10px; /* Smaller active state padding */
-  }
-  
 }
 
 /* Phone layout */
@@ -741,13 +728,15 @@ body {
   /* Header visibility enabled */
 
   .home, .about, .project, .services, .contact {
-    margin: 130px 20px; /* Adjusted top margin for fixed header clearance on small phones */
+    margin: 50px 20px; /* Reduced top margin since header is not fixed */
   }
 
   .home-container, .about-container, .contact-content {
     flex-direction: column;
     gap: 2rem;
   }
+  
+  /* ... (Rest of the mobile CSS remains the same) ... */
 
   .projects-container, .services-container {
     grid-template-columns: 1fr;
@@ -778,10 +767,11 @@ body {
 }
 
 @media (max-width: 1024px) {
-/* ... (Existing responsive rules for other elements) ... */
+
+  /* The header styling is already handled above */
 
   .home, .about, .project, .services, .contact {
-    margin: 120px auto 20px auto; /* Adjusted top margin for fixed header clearance */
+    margin: 50px auto 20px auto; /* Reduced top margin since header is not fixed */
     padding: 0 15px;
     text-align: center;
     max-width: 100%;
@@ -848,5 +838,4 @@ body {
   html, body {
     overflow-x: hidden;
   }
-  }
-  
+}
