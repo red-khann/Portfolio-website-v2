@@ -92,6 +92,7 @@ Licensed under the **MIT License** — feel free to use and modify with credit.
 
 ---
 
-### 🚀 Made with ❤️ by **Mohd Rehan Khan**  
-> “Turning data into decisions and ideas into intelligent solutions.”
+### 🚀 Crafted with ❤️ by **Amine**, thoughtfully customized and enhanced by **Mohd Rehan Khan**.  
+> “Blending creativity, logic, and passion to turn data into intelligent solutions.”
+
 
