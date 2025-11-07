@@ -13,7 +13,6 @@ header {
 
 .header-list {
   margin: 15px 20px;
-  /* NEW: Ensures content can flow horizontally */
   overflow-x: hidden; 
 }
 
@@ -22,7 +21,6 @@ header {
   align-items: center;
   justify-content: center;
   padding: 20px 0;
-  /* NEW: Allows the wrapper to manage scroll */
   overflow-x: auto; 
 }
 
@@ -702,21 +700,40 @@ body {
     height: auto;
   }
 
-  /* --- FIX for Two-Line Floating Menu (ul-list) --- */
+  /* FIX 1: Remove side margins on header list wrapper */
+  .header-list {
+    margin: 15px 0; /* Override desktop margin to give space */
+    overflow-x: hidden;
+  }
+  
+  /* FIX 2: Ensure wrapper uses full width and centers the content */
+  .div-list {
+    width: 100%;
+    /* No need for overflow-x: auto here as the content should fit now */
+    overflow-x: hidden;
+  }
+
+  /* FIX 3: Shrink and center the menu to fit on one line (primary fix) */
   .ul-list {
-    flex-wrap: nowrap; /* Forces items onto a single line */
-    overflow-x: auto; /* Allows horizontal scrolling */
-    gap: 1rem;
-    padding: 8px 15px;
-    /* Styles to hide the scrollbar (optional, for aesthetics) */
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    /* We allow wrapping again just in case, but the shrinkage should prevent it */
+    flex-wrap: wrap; 
+    gap: 0.5rem; /* Reduced gap */
+    padding: 5px 10px; /* Reduced padding on the container */
+    overflow-x: hidden;
   }
   /* Webkit-specific (Chrome, Safari) scrollbar hide */
   .ul-list::-webkit-scrollbar {
     display: none;
   }
-  /* ------------------------------------------------ */
+
+  /* FIX 4: Shrink the individual list items */
+  .ul-list li {
+    gap: 3px; /* Smaller gap between icon and text */
+  }
+  .ul-list li.active {
+    padding: 5px 10px; /* Smaller active state padding */
+  }
+  
 }
 
 /* Phone layout */
@@ -761,8 +778,7 @@ body {
 }
 
 @media (max-width: 1024px) {
-
-  /* Header visibility enabled */
+/* ... (Existing responsive rules for other elements) ... */
 
   .home, .about, .project, .services, .contact {
     margin: 120px auto 20px auto; /* Adjusted top margin for fixed header clearance */
@@ -833,4 +849,4 @@ body {
     overflow-x: hidden;
   }
   }
-    
+  
