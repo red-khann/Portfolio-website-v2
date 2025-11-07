@@ -13,6 +13,8 @@ header {
 
 .header-list {
   margin: 15px 20px;
+  /* NEW: Ensures content can flow horizontally */
+  overflow-x: hidden; 
 }
 
 .div-list {
@@ -20,6 +22,8 @@ header {
   align-items: center;
   justify-content: center;
   padding: 20px 0;
+  /* NEW: Allows the wrapper to manage scroll */
+  overflow-x: auto; 
 }
 
 .ul-list {
@@ -698,13 +702,13 @@ body {
     height: auto;
   }
 
+  /* --- FIX for Two-Line Floating Menu (ul-list) --- */
   .ul-list {
-    /* FIX: Prevents two-line wrap, forcing horizontal scroll if needed */
-    flex-wrap: nowrap; 
-    overflow-x: auto; 
+    flex-wrap: nowrap; /* Forces items onto a single line */
+    overflow-x: auto; /* Allows horizontal scrolling */
     gap: 1rem;
     padding: 8px 15px;
-    /* Hide scrollbar on mobile devices */
+    /* Styles to hide the scrollbar (optional, for aesthetics) */
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
   }
@@ -712,6 +716,7 @@ body {
   .ul-list::-webkit-scrollbar {
     display: none;
   }
+  /* ------------------------------------------------ */
 }
 
 /* Phone layout */
@@ -827,4 +832,5 @@ body {
   html, body {
     overflow-x: hidden;
   }
-}
+  }
+    
