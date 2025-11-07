@@ -1,75 +1,61 @@
 ![Logo](cp.png)
 
-# Amine Portfolio Showcase 💻
+# red_khann Portfolio Showcase 💻
 
-Welcome to **Amine's Portfolio Showcase**!  
-A modern **portfolio website** designed to showcase projects, skills, and personal work using **HTML, CSS, and JavaScript**.  
-It is fully **responsive**, interactive, and visually appealing across desktop, tablet, and mobile devices.
+Welcome to **Mohd Rehan Khan’s Portfolio Showcase**!  
+A modern and responsive **personal portfolio website** built using **HTML, CSS, and JavaScript** to showcase my **projects, skills, and journey** as a **BCA student and aspiring AI/ML Engineer**.  
+This site is fully **responsive**, interactive, and visually optimized for desktop, tablet, and mobile devices.
 
 ---
 
-## Live Demo 🚀
+## 🌐 Live Demo 🚀
 
-You can view the live website here: [Live Demo](https://stalwart-baklava-8ed433.netlify.app/)
+You can view my live portfolio here: [Live Demo](https://red-khann.github.io/portfolio-showcase/)  
+*(Replace the link with your actual hosted version — GitHub Pages or Netlify)*
 
 ---
 
 ## 🌟 Website Sections
 
-- **Home**: Developer introduction with avatar and short description  
-- **About**: Experience, tech stack, personal insights, and skill cards  
-- **Projects**: Showcase of projects with images, descriptions, and skills  
-- **Services**: Highlighting services offered with interactive cards  
-- **Contact**: Contact form and social links with interactive hover effects  
-- **Footer**: Quick navigation links and social media links
+- **Home**: Introduction with photo, short description, and role headline  
+- **About**: My educational background, career goals, and skill highlights  
+- **Projects**: Showcase of my development and data science projects  
+- **Services**: Overview of my offered services and expertise  
+- **Contact**: Contact form and social media links  
+- **Footer**: Quick navigation and external profile links  
 
 ---
 
 ## ⚡ Features
 
-- Dark theme with **blue accent color** for highlights  
-- Smooth scroll navigation between sections  
-- Fully **responsive design** for desktop, tablet, and mobile  
-- Hover effects and animations for buttons, cards, and links  
+- Clean and modern UI with **black & blue accent theme**  
+- Smooth scroll navigation across all sections  
+- Fully **responsive** for all devices  
+- Animated project cards and interactive hover effects  
 - Contact form with validation  
-- Interactive social links  
+- Integrated social and GitHub links  
 
 ---
 
-## 🛠 Technologies Used
+## 🛠️ Technologies Used
 
 - **HTML5** – Structure and semantic content  
-- **CSS3** – Styling, responsive layouts, Flexbox & Grid  
+- **CSS3** – Responsive design using Flexbox & Grid  
 - **JavaScript (Vanilla JS)** – Interactivity and animations  
-- **Font Awesome / Boxicons** – Icons  
+- **Font Awesome / Boxicons** – Icons and visual elements  
 - **AOS.js** – Scroll animations  
 
 ---
 
-## License
+## 📘 About Me
 
-This project is licensed under the terms described in the [LICENSE](LICENSE) file.
-
----
-
-## 🚀 How to Use / Customize
-
-1. **Clone the repository:**
-
- ---
-
-## 📬 Contact
-
-- Email: aminehamzaoui1925@gmail.com   
-- Location: Boumerdès, Algeria  
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mohamed-amine-hamzaoui-a2453a35b/)  
-- GitHub: [GitHub](https://github.com/Saboo24)  
-- Instagram: [Instagram](https://www.instagram.com/a__m.i.n__e/?utm_source=ig_web_button_share_sheet)
+I’m **Mohd Rehan Khan**, a **BCA student at Maharaj Agrasen Mahavidyalaya**, passionate about **Artificial Intelligence**, **Machine Learning**, and **Data Science**.  
+I love building projects that combine creativity with real-world impact and continuously learning new technologies to grow as an **AI/ML Engineer**.  
 
 ---
 
-Made with ❤️ by **Amine Hamzaoui**
+## 📂 How to Use / Customize
 
-
-```bash
-git clone https://github.com/Saboo24/portfolio-showcase.git
+1. **Clone this repository:**
+   ```bash
+   git clone https://github.com/red-khann/portfolio-showcase.git
