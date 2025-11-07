@@ -135,7 +135,7 @@ header {
   cursor: pointer;
   transition: 0.4s;
   color: black; /* Text color set to black */
-  text-decoration: none;
+  text-decoration: none; /* FIX: Removed underline from the anchor tag */
 }
 
 .btn-home2:hover{
@@ -699,9 +699,18 @@ body {
   }
 
   .ul-list {
-    flex-wrap: wrap;
+    /* FIX: Prevents two-line wrap, forcing horizontal scroll if needed */
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
     gap: 1rem;
     padding: 8px 15px;
+    /* Hide scrollbar on mobile devices */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  /* Webkit-specific (Chrome, Safari) scrollbar hide */
+  .ul-list::-webkit-scrollbar {
+    display: none;
   }
 }
 
