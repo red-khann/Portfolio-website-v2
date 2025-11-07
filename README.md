@@ -80,11 +80,10 @@ I love building data-driven projects that combine logic and creativity.
 ---
 
 ## 📬 Contact  
-- 📧 **Email:** rehan.khan786092.rk@gmail.com  
-- 📍 **Location:** Bareilly, Uttar Pradesh, India  
-- 💼 **LinkedIn:** https://linkedin.com/in/mohd-rehan-khan  
+- 📧 **Email:** [rehan.khan786092.rk@gmail.com](mailto:rehan.khan786092.rk@gmail.com)  
+- 📍 **Location:** [Bareilly, Uttar Pradesh, India](https://www.google.com/maps/place/Bareilly,+Uttar+Pradesh,+India) 
+- 💼 **LinkedIn:** https://linkedin.com/in/mohd-rehan-khan-  
 - 💻 **GitHub:** https://github.com/red-khann  
-- 📷 **Instagram:** https://www.instagram.com/red.khann/
 
 ---
 
@@ -95,3 +94,4 @@ Licensed under the **MIT License** — feel free to use and modify with credit.
 
 ### 🚀 Made with ❤️ by **Mohd Rehan Khan**  
 > “Turning data into decisions and ideas into intelligent solutions.”
+
