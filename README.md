@@ -1,4 +1,4 @@
-![Logo](cp.png)
+![Logo](cp2.png)
 
 # 💼 Red_Khann Portfolio Website  
 
@@ -94,5 +94,6 @@ Licensed under the **MIT License** — feel free to use and modify with credit.
 
 ### 🚀 Crafted with ❤️ by **Amine**, thoughtfully customized and enhanced by **Mohd Rehan Khan**.  
 > “Blending creativity, logic, and passion to turn data into intelligent solutions.”
+
 
 
