@@ -8,7 +8,7 @@ This project highlights my **skills, projects, and learning journey** as a **BCA
 ---
 
 ## 🌐 Live Demo  
-🔗 [View Portfolio](https://portfolio-website-v2-2r932zixx-mohd-rehan-khanns-projects.vercel.app/)
+🔗 [View Portfolio](https://portfolio-website-v2-three-orcin.vercel.app)
 
 *(Hosted on Vercel — optimized for fast loading and responsive design.)*
 
@@ -94,6 +94,7 @@ Licensed under the **MIT License** — feel free to use and modify with credit.
 
 ### 🚀 Crafted with ❤️ by **Amine**, thoughtfully customized and enhanced by **Mohd Rehan Khan**.  
 > “Blending creativity, logic, and passion to turn data into intelligent solutions.”
+
 
 
 
